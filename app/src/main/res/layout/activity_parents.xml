@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/topbackground"
+    tools:context=".parents.ParentsActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/prents_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|center_horizontal"
+                android:text="Parents Introduction Page"
+                android:textColor="#10227C"
+                android:textColorHighlight="#450808"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="The aim of the application is to keep the prent close to how the student is performint in school and also the parent can sent students fees whitle still at home"
+                android:textColor="#EAAD12"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Walkthrowgh on the activities you can do."
+                android:textSize="28sp" />
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/teal_200"
+                android:gravity="center"
+                android:text="Payment of school Fees"
+                android:textColor="#FF5722"
+                android:textSize="25sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/pay_via_mpesa"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:height="60dp"
+                    android:background="@drawable/mpesa" />
+
+                <TextView
+                    android:id="@+id/button6"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="5dp"
+                    android:background="@drawable/equity"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/mpesa_details"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Mpesa Details"
+                        android:textColor="#039BE5"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView40"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Lipa na Mpesa" />
+
+                    <TextView
+                        android:id="@+id/textView39"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Pay Bill" />
+
+                    <TextView
+                        android:id="@+id/textView100"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Enter business no." />
+
+                    <TextView
+                        android:id="@+id/textView101"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="345098" />
+
+                    <TextView
+                        android:id="@+id/textView104"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Account no." />
+
+                    <TextView
+                        android:id="@+id/textView105"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="26801483" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|end"
+                    android:gravity="right|end"
+                    android:orientation="vertical"
+                    android:paddingLeft="100dp">
+
+                    <TextView
+                        android:id="@+id/textView41"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Bank Details"
+                        android:textColor="#00ACC1"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView42"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="TextView" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#1E88E5"
+                android:gravity="center"
+                android:text="Contact The School"
+                android:textColor="#8F116A"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="There are diferent ways to contact the school. /you can do it through email,sms or a Phone call" />
+
+            <TextView
+                android:id="@+id/textView28"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="which department do you want to contact" />
+
+            <TextView
+                android:id="@+id/textView29"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1.The secretary" />
+
+            <TextView
+                android:id="@+id/textView30"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2.The school basaa." />
+
+            <TextView
+                android:id="@+id/textView31"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="4.The deputy principal" />
+
+            <TextView
+                android:id="@+id/textView32"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#35B158"
+                android:text="Uploading of school fees bank reciept image or the Mpesa QR code."
+                android:textColor="#801442"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/textView33"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="What do you want to upoad?"
+                android:textSize="19sp" />
+
+            <TextView
+                android:id="@+id/textView34"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1.Bank script image." />
+
+            <TextView
+                android:id="@+id/textView106"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="-Take a picture " />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/selectimage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="#3949AB"
+                    android:padding="10dp"
+                    android:text="Select Image"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/takepicture"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="#1E88E5"
+                    android:padding="10dp"
+                    android:text="Take picture"
+                    android:textSize="20sp"
+
+
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView107"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="-Upload a picture" />
+
+            <TextView
+                android:id="@+id/textView35"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2.Mpesa QR code" />
+
+            <EditText
+                android:id="@+id/stdname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Student Name"
+                android:inputType="textPersonName"
+                android:textColorHighlight="#FFB300"
+                android:textColorHint="#FFB300"
+                android:textSize="25sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/get_qr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Enter Mpesa QR"
+                    android:inputType="textPersonName"
+                    android:textColorHint="#FB8C00" />
+
+                <Button
+                    android:id="@+id/sendqr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:text="Send QR" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/view_std_results"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="#0CDD15"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:paddingBottom="5dp"
+                android:text="View student Results ->"
+                android:textColor="#153091"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/students"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoText="false"
+                android:text="Click Here to view results."
+                android:textColor="#263CC3" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/signOutBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="24dp"
+                android:text="Sign Out"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                app:backgroundTint="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

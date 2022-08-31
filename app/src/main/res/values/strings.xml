@@ -1,0 +1,161 @@
+<resources>
+    <string name="app_name">School</string>
+    <string name="title_activity_admin_main">AdminMainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="register">Register</string>
+    <string name="login">Login</string>
+    <string name="registerr">REGISTER</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="title_activity_admin_dashboard">AdminDashboardActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="tab_text_1">Home</string>
+    <string name="tab_text_2">Main</string>
+    <string name="tab_text_3">New</string>
+    <string name="textviewuse_the_app">How to use this app!</string>
+    <string name="admin_page">Manage Fees</string>
+    <string name="managefees">Manage Fees</string>
+    <string name="add_students">Add Students</string>
+    <string name="student_name">Student Name:</string>
+    <string name="student_adm">Student ADM:</string>
+    <string name="student_names">Student Name</string>
+    <string name="addmission_number">Admission Number</string>
+    <string name="student_class">Student Class</string>
+    <string name="student_class_in">Student Class</string>
+    <string name="from">From</string>
+    <string name="to_when">To when</string>
+    <string name="add">Add</string>
+    <string name="view">View</string>
+    <string name="registero">Register</string>
+    <string name="add_student_results">Add Student Results</string>
+    <string name="student_nam">Student Name:</string>
+    <string name="students_name">Student Name</string>
+    <string name="admission">Admission:</string>
+    <string name="student_addmission">Student admission</string>
+    <string name="math">Math</string>
+    <string name="english">English</string>
+    <string name="kiswahili">Kiswahili</string>
+    <string name="chemistry">Chemistry</string>
+    <string name="physics">Physics</string>
+    <string name="cre">CRE</string>
+    <string name="business">Business</string>
+    <string name="biology">Biology</string>
+    <string name="upload">Upload</string>
+    <string name="title_activity_library">LibraryActivity</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home_fragment">Home Fragment</string>
+    <string name="sport_fragment">Sport Fragment</string>
+    <string name="movie_fragment">Movie Fragment</string>
+    <string name="download_free_source_nfrom_uilover_channel">Download Free source \nfrom uilover channel</string>
+    <string name="welcome">WelCome</string>
+    <string name="the_school">The school X App \Management system</string>
+    <string name="in_this_tab_we_will_guid_you_through_on_how_to_use_the_library_sections_to_add_books_give_books_to_the_students_teachers_and_the_staff_committiee_and_as_well_as_collecting_the_in_a_very_simplaler_way_thankyou">In this tab we will guid you through on how to use the library sections (To add books ,give books to the students, teachers and the staff committiee and as well as collecting the in a very simplaler way).Thankyou</string>
+    <string name="welcome_to_the_xschool_library">Welcome to the Xschool Library.</string>
+    <string name="the_guide">The guide</string>
+    <string name="login_std">LOGIN</string>
+    <string name="title_activity_student_nav">StudentNavActivity</string>
+    <string name="title_activity_std_drawer">StdDrawerActivity</string>
+    <string name="audio">Audio</string>
+    <string name="upload_docx">UPLOAD DOCX</string>
+    <string name="upload_pdf">UPLOAD PDF</string>
+    <string name="video">VIDEO</string>
+    <string name="welcome_to_admin_homepage">Welcome to admin homepage</string>
+    <string name="the_admin_has_the_following_abilities">The admin has the following abilities</string>
+    <string name="_1_upload_student_results">1.Upload student results.</string>
+    <string name="_2_view_student_results_all_spesific">2.View student results (all,spesific)</string>
+    <string name="_3_delete_student_details">3.Delete student details</string>
+    <string name="_4_upload_assignments_pdf_audio_video">4.Upload assignments (pdf,audio,video)</string>
+    <string name="_5_write_a_notice_and_publish_it">5.Write a notice and Publish it.</string>
+    <string name="_6_view_and_add_teachers">6.View and add teachers.</string>
+    <string name="the_guidel">The guide</string>
+    <string name="this_section_is_meant_for_the_admin_who_has_not_used_this_application_before_and_would_like_to_have_a_guide_please_follow_along_with_the_steps_given_to_the_activity_you_want_to_do">This section is meant for the admin who has not used this application before and would like to have a guide.Please follow along with the steps given to the activity you want to do.</string>
+    <string name="_1_uploading_of_results">1.uploading of results:</string>
+    <string name="_1_go_to_dashboard">1.Go to dashboard.</string>
+    <string name="_2_click_on_results">2.Click on results.</string>
+    <string name="_3_insert_your_resultd_then_upoad">3.Insert your resultd Then upoad</string>
+    <string name="_2_view_all_results">2.View all Results</string>
+    <string name="_3_view_all_student_data">3.View all student data</string>
+    <string name="_4_add_or_delete_student_data">4.Add or delete student data</string>
+    <string name="_5_upload_assignment">5.Upload assignment</string>
+    <string name="_6_write_notice">6.Write notice</string>
+    <string name="_7_view_and_add_teachers">7.View and add teachers</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="welcome_basaa_wish_you_a_nice_time_ahead_as_you_go_on_with_your_accountings">Welcome basaa wish you a nice time ahead as you go on with your accountings</string>
+    <string name="sign_in">Sign In</string>
+    <string name="xschool_basaa_page">XSchool basaa Page</string>
+    <string name="already_registered_sign_in">Already Registered , Sign In !</string>
+    <string name="sign_uplll">Sign Up</string>
+    <string name="retype_your_password">Retype Your Password</string>
+    <string name="type_your_password">Type Your Password</string>
+    <string name="type_your_email">Type your Email</string>
+    <string name="title_activity_class_main">ClassMainActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">+</string>
+    <string name="previous">View</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_notice_main">NoticeMainActivity</string>
+    <string name="title_activity_timetable_main">TimetableMainActivity</string>
+    <string name="books_giving">Books giving</string>
+    <string name="this_page_is_meant_for_giving_class_books_library_books_as_well_as_collecting_them">This page is meant for giving class books,library books as well as collecting them.</string>
+    <string name="giving_of_class_books">Giving of class books</string>
+    <string name="student_namem">Student Name:</string>
+    <string name="student_namen">Student Name</string>
+    <string name="student_admission">Student Admission:</string>
+    <string name="student_admissionn">Student Admission</string>
+    <string name="book_name">Book Name:</string>
+    <string name="book_namel">Book name</string>
+    <string name="book_number">Book Number:</string>
+    <string name="book_numberl">Book Number</string>
+    <string name="giving_date">Giving Date</string>
+    <string name="return_date">Return Date</string>
+    <string name="giving_datep">Giving Date</string>
+    <string name="o">Return Date</string>
+    <string name="title_activity_teachers_main">TeachersMainActivity</string>
+    <string name="title_activity_subjects_main">SubjectsMainActivity</string>
+    <string name="title_activity_notice">NoticeActivity</string>
+    <string name="title_activity_basaa_main">BasaaMainActivity</string>
+    <string name="title_activity_student">StudentActivity</string>
+    <string name="view_student_results">View student Results</string>
+    <string name="let_s_go">Let\'s Go</string>
+    <string name="the_school_to_become_to_belong">The school to become to belong</string>
+    <string name="forgotten_password">forgotten password?</string>
+    <string name="x">X</string>
+    <string name="school">School</string>
+    <string name="xschool_login_page">Xschool login page</string>
+    <string name="enter_your_email">enter your email</string>
+    <string name="enter_your_password">enter your password</string>
+    <string name="forgetten_password">forgetten password?</string>
+    <string name="select_image">Select Image</string>
+    <string name="upload_images">Upload images</string>
+    <string name="select_imagemm">select image</string>
+    <string name="upload_image">Upload Image</string>
+    <string-array name="list1">
+        <item>"Select Book Category"</item>
+        <item>"CSE"</item>
+        <item>"ECE"</item>
+        <item>"Magazine"</item>
+        <item>"Novel"</item>
+        <item>"Mathematics"</item>
+        <item>"GATE"</item>
+        <item>"Business"</item>
+        <item>"Others"</item>
+
+
+    </string-array>
+</resources>

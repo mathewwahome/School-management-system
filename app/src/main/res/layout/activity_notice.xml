@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".admin.notice.NoticeActivity">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_dialog_email" />
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <Button
+                android:id="@+id/button_second"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="@string/previous"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/textView89"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:text="Notice Type"
+                android:textColor="#1E88E5"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioGroup
+                    android:id="@+id/noticetypebtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#dbeceb"
+                    android:orientation="horizontal"
+                    android:padding="15dp">
+
+                    <RadioButton
+                        android:id="@+id/circular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Circular"
+                        android:textColor="#5E35B1" />
+
+                    <RadioButton
+                        android:id="@+id/classdiary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Class Diary"
+                        android:textColor="#5E35B1" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/noticetype"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textView91"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="Select Party"
+                android:textColor="#1E88E5"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioGroup
+                    android:id="@+id/selectparty"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#dbeceb"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <RadioButton
+                        android:id="@+id/radioButton3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Everyone"
+                        android:textColor="#5E35B1" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Only Staff"
+                        android:textColor="#5E35B1" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Only Teachers"
+                        android:textColor="#5E35B1" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Only Students"
+                        android:textColor="#5E35B1" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Select Class"
+                        android:textColor="#5E35B1" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Only Parents"
+                        android:textColor="#5E35B1" />
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/party"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/textView95"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="Select date"
+                    android:textColor="#1E88E5"
+                    android:textSize="20sp" />
+
+                <CalendarView
+                    android:id="@+id/calendarView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#E53935"
+                    android:focusedMonthDateColor="#5E35B1"
+                    android:unfocusedMonthDateColor="#039BE5"
+                    android:weekNumberColor="#C0CA33"
+                    android:weekSeparatorLineColor="#3949AB" />
+
+                <TextView
+                    android:id="@+id/textView94"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="8dp"
+                    android:text="Enter your message here:"
+                    android:textColor="#1E88E5" />
+
+                <EditText
+                    android:id="@+id/notice_sms"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:gravity="start|top"
+                    android:hint="Noticeboard Entry *"
+                    android:inputType="textMultiLine"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="40dp"
+                    android:paddingBottom="40dp"
+                    android:textColor="#1C093A"
+                    android:textColorHint="#00ACC1" />
+
+                <Button
+                    android:id="@+id/sendbtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="SEND"
+                    android:textColor="#039BE5"
+                    app:backgroundTint="#F4511E" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C5C0C0"
+    tools:context=".MainActivity">
+
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Welcome to schoolX"
+                android:textColor="#FB8C00"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingTop="15dp"
+                android:text="motto:To become to belong"
+                android:textColor="#3949AB" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                app:srcCompat="@color/cardview_dark_background"
+                tools:srcCompat="@android:drawable/button_onoff_indicator_on" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="You are all welcome: Join us today." />
+
+            <TextView
+                android:id="@+id/tev"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#F4511E"
+                android:text="You are required to select your category in the below selection if you are a teacher select teacher..." />
+            <TextView
+                android:id="@+id/textVie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="The school division" />
+
+            <TextView
+                android:id="@+id/basaa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/admin"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textStyle="bold"
+                android:text="Admin"
+                android:textColor="#FCB30EB3"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/teachers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/teacher"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:textStyle="bold"
+                android:paddingBottom="10dp"
+                android:text="Teacher"
+                android:textColor="#E53935"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/students"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/student"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="Student"
+                android:textColor="#FCFAF9F9"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/staff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/staffb"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="Staff"
+                android:textStyle="bold"
+                android:textColor="#FFB300"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/parents"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/parents"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="Parents"
+                android:textColor="#3949AB"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

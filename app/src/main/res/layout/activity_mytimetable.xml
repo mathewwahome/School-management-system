@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".students.Mytimetable">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|start"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_back_black" />
+
+    <ScrollView
+        android:id="@+id/scrollView18"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView121"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="TIME TABLE PAGE"
+                android:textColor="#C0CA33"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView122"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Manage your time by creating your time table today."
+                android:textColor="#3949AB" />
+
+            <EditText
+                android:id="@+id/adm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Name" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#FB8C00">
+
+                            <TextView
+                                android:id="@+id/textView124"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:text="Days"
+                                android:textColor="#039BE5"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/textView126"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:text="Mon"
+                                android:textColor="#039BE5"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/textView128"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:text="Tue"
+                                android:textColor="#039BE5"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/textView130"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:text="Wed"
+                                android:textColor="#039BE5"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/textView131"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:text="thur"
+                                android:textColor="#039BE5"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/textView132"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:text="Frid"
+                                android:textColor="#039BE5"
+                                android:textStyle="bold" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView129"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:text="Time" />
+
+                            <TextView
+                                android:id="@+id/textView143"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:text="Subjects" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <EditText
+                                android:id="@+id/a"
+                                android:layout_width="60dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:ems="10"
+                                android:hint="Time"
+                                android:inputType="textPersonName" />
+
+                            <EditText
+                                android:id="@+id/b"
+                                android:layout_width="60dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:ems="10"
+                                android:inputType="textPersonName" />
+
+                            <EditText
+                                android:id="@+id/c"
+                                android:layout_width="60dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:ems="10"
+                                android:inputType="textPersonName" />
+
+                            <EditText
+                                android:id="@+id/za"
+                                android:layout_width="60dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:ems="10"
+                                android:inputType="textPersonName" />
+
+                            <EditText
+                                android:id="@+id/d"
+                                android:layout_width="60dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:ems="10"
+                                android:inputType="textPersonName" />
+
+                            <EditText
+                                android:id="@+id/e"
+                                android:layout_width="60dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:ems="10"
+                                android:inputType="textPersonName" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <EditText
+                                android:id="@+id/f"
+                                android:layout_width="60dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:ems="10"
+                                android:hint="Time"
+                                android:inputType="textPersonName" />
+
+                            <EditText
+                                android:id="@+id/g"
+                                android:layout_width="60dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:ems="10"
+                                android:inputType="textPersonName" />
+
+                            <EditText
+                                android:id="@+id/h"
+                                android:layout_width="60dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:ems="10"
+                                android:inputType="textPersonName" />
+
+                            <EditText
+                                android:id="@+id/i"
+                                android:layout_width="60dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:ems="10"
+                                android:inputType="textPersonName" />
+
+                            <EditText
+                                android:id="@+id/j"
+                                android:layout_width="60dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:ems="10"
+                                android:inputType="textPersonName" />
+
+                            <EditText
+                                android:id="@+id/k"
+                                android:layout_width="60dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:ems="10"
+                                android:inputType="textPersonName" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <EditText
+                                android:id="@+id/l"
+                                android:layout_width="60dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:ems="10"
+                                android:hint="Time"
+                                android:inputType="textPersonName" />
+
+                            <EditText
+                                android:id="@+id/ah"
+                                android:layout_width="60dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:ems="10"
+                                android:inputType="textPersonName" />
+
+                            <EditText
+                                android:id="@+id/n"
+                                android:layout_width="60dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:ems="10"
+                                android:inputType="textPersonName" />
+
+                            <EditText
+                                android:id="@+id/o"
+                                android:layout_width="60dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:ems="10"
+                                android:inputType="textPersonName" />
+
+                            <EditText
+                                android:id="@+id/p"
+                                android:layout_width="60dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:ems="10"
+                                android:inputType="textPersonName" />
+
+                            <EditText
+                                android:id="@+id/r"
+                                android:layout_width="60dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:ems="10"
+                                android:inputType="textPersonName" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <EditText
+                                android:id="@+id/ar"
+                                android:layout_width="60dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:ems="10"
+                                android:hint="Time"
+                                android:inputType="textPersonName" />
+
+                            <EditText
+                                android:id="@+id/s"
+                                android:layout_width="60dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:ems="10"
+                                android:inputType="textPersonName" />
+
+                            <EditText
+                                android:id="@+id/t"
+                                android:layout_width="60dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:ems="10"
+                                android:inputType="textPersonName" />
+
+                            <EditText
+                                android:id="@+id/u"
+                                android:layout_width="60dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:ems="10"
+                                android:inputType="textPersonName" />
+
+                            <EditText
+                                android:id="@+id/v"
+                                android:layout_width="60dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:ems="10"
+                                android:inputType="textPersonName" />
+
+                            <EditText
+                                android:id="@+id/w"
+                                android:layout_width="60dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:ems="10"
+                                android:inputType="textPersonName" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp">
+
+                            <EditText
+                                android:id="@+id/x"
+                                android:layout_width="60dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:ems="10"
+                                android:hint="Time"
+                                android:inputType="textPersonName" />
+
+                            <EditText
+                                android:id="@+id/y"
+                                android:layout_width="60dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:ems="10"
+                                android:inputType="textPersonName" />
+
+                            <EditText
+                                android:id="@+id/z"
+                                android:layout_width="60dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:ems="10"
+                                android:inputType="textPersonName" />
+
+                            <EditText
+                                android:id="@+id/aa"
+                                android:layout_width="60dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:ems="10"
+                                android:inputType="textPersonName" />
+
+                            <EditText
+                                android:id="@+id/ba"
+                                android:layout_width="60dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:ems="10"
+                                android:inputType="textPersonName" />
+
+                            <EditText
+                                android:id="@+id/ca"
+                                android:layout_width="60dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:ems="10"
+                                android:inputType="textPersonName" />
+
+                        </TableRow>
+
+                    </TableLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/caca"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/btntimetable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/staffb"
+                    android:gravity="center"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="10dp"
+                    android:text="Upload"
+                    android:textColor="#00ACC1"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

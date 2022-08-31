@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.school">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/rightfower"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/rightfower"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.School"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".parents.contacts.Contacts"
+            android:exported="false" />
+        <activity
+            android:name=".students.Mytimetable"
+            android:exported="false" />
+        <activity
+            android:name=".admin.exam.Exam"
+            android:exported="false" />
+        <activity
+            android:name=".admin.staff.AddStaff"
+            android:exported="false" />
+        <activity
+            android:name=".admin.staff.UpdateData"
+            android:exported="false" />
+        <activity
+            android:name=".admin.staff.ReadData"
+            android:exported="false" />
+        <activity
+            android:name=".basaa.upload.FeesUpload"
+            android:exported="false" />
+        <activity
+            android:name=".admin.AdminPage"
+            android:exported="false" />
+        <activity
+            android:name=".admin.AdminLogin"
+            android:exported="false" />
+        <activity
+            android:name=".admin.AdminSignup"
+            android:exported="false" />
+        <activity
+            android:name=".libraly.ViewBooks"
+            android:exported="false" />
+        <activity
+            android:name=".teacher.TeacherLogin"
+            android:exported="false" />
+        <activity
+            android:name=".teacher.TeacherSignup"
+            android:exported="false" />
+        <activity
+            android:name=".teacher.Teacher"
+            android:exported="false" />
+        <activity
+            android:name=".admin.homework.dbview.WatchClasses"
+            android:exported="false" />
+        <activity
+            android:name=".admin.homework.dbview.CheckAssignment"
+            android:exported="false" />
+        <activity
+            android:name=".libraly.RegLibStudents"
+            android:exported="false" />
+        <activity
+            android:name=".libraly.AddBook"
+            android:exported="false" />
+        <activity
+            android:name=".libraly.BooksCollection"
+            android:exported="false" />
+        <activity
+            android:name=".libraly.Libralian"
+            android:exported="false" />
+        <activity
+            android:name=".libraly.Libraly"
+            android:exported="false" />
+        <activity
+            android:name=".teacher.TeacherActivity"
+            android:exported="false" />
+        <activity
+            android:name=".students.StudentActivity"
+            android:exported="false"
+            android:label="@string/title_activity_student"
+            android:theme="@style/Theme.School.NoActionBar" />
+        <activity
+            android:name=".students.upload.UpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".parents.ParentSignupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".parents.ParentLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".parents.StudentDeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".parents.ParentMainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".parents.ParentsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".staff.StaffActivity"
+            android:exported="false" />
+        <activity
+            android:name=".basaa.FeesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".basaa.SignupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".basaa.BasaaMainActivity"
+            android:exported="false"
+            android:label="@string/title_activity_basaa_main"
+            android:theme="@style/Theme.School.NoActionBar" />
+        <activity
+            android:name=".basaa.BasaaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.homework.AssignmentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.notice.NoticeActivity"
+            android:exported="false"
+            android:label="@string/title_activity_notice"
+            android:theme="@style/Theme.School.NoActionBar" />
+        <activity
+            android:name=".admin.results.AddResultsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.students.AddStudentsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.students.viewdb.ViewStdActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.subjects.AddSubjectActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.ClassesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminMainActivity"
+            android:exported="false"
+            android:label="@string/title_activity_admin_main" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".IntroActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

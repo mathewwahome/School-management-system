@@ -5,8 +5,10 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import androidx.cardview.widget.CardView
 import androidx.fragment.app.Fragment
+import com.example.school.MainActivity
 import com.example.school.R
 import com.example.school.admin.ClassesActivity
 import com.example.school.admin.exam.Exam
@@ -16,7 +18,10 @@ import com.example.school.admin.results.AddResultsActivity
 import com.example.school.admin.staff.AddStaff
 import com.example.school.admin.students.AddStudentsActivity
 import com.example.school.admin.subjects.AddSubjectActivity
+import com.example.school.parents.ParentMainActivity
 import com.example.school.parents.contacts.Contacts
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.ktx.Firebase
 
 class DashboardFragment : Fragment() {
     private lateinit var mview:View
@@ -59,6 +64,11 @@ class DashboardFragment : Fragment() {
         }
         mview.findViewById<CardView>(R.id.parents_tap).setOnClickListener {
             val  intent = Intent(this@DashboardFragment.requireContext(), Contacts::class.java)
+            startActivity(intent)
+        }
+        mview.findViewById<Button>(R.id.signOutBtnb).setOnClickListener {
+            Firebase.auth.signOut()
+            val  intent = Intent(this@DashboardFragment.requireContext(), MainActivity::class.java)
             startActivity(intent)
         }
         return mview

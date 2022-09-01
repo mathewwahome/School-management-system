@@ -6,8 +6,9 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.school.R
+import com.example.school.basaa.viewqr.Qr
 
-class MyAdapter(private val userList: ArrayList<com.example.school.admin.students.viewdb.User>) : RecyclerView.Adapter<MyAdapter.MyViewHolder>() {
+class MyAdapter(private val userList: ArrayList<User>) : RecyclerView.Adapter<MyAdapter.MyViewHolder>() {
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
@@ -39,7 +40,7 @@ class MyAdapter(private val userList: ArrayList<com.example.school.admin.student
 
     class MyViewHolder(itemView : View) : RecyclerView.ViewHolder(itemView){
 
-        val firstName : TextView = itemView.findViewById(R.id.admno)
+        val firstName : TextView = itemView.findViewById(R.id.qrcode)
         val lastName : TextView = itemView.findViewById(R.id.sname)
         val age : TextView = itemView.findViewById(R.id.amountt)
 

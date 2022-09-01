@@ -18,6 +18,9 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".basaa.viewqr.ViewQr"
+            android:exported="false" />
+        <activity
             android:name=".basaa.viewdb.ViewFees"
             android:exported="false" />
         <activity

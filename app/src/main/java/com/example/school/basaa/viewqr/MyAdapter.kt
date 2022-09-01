@@ -1,4 +1,4 @@
-package com.example.school.basaa.viewdb
+package com.example.school.basaa.viewqr
 
 import android.view.LayoutInflater
 import android.view.View
@@ -7,7 +7,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.school.R
 
-class MyAdapter(private val userList: ArrayList<Fees>) : RecyclerView.Adapter<MyAdapter.MyViewHolder>() {
+class MyAdapter(private val userList: ArrayList<Qr>) : RecyclerView.Adapter<MyAdapter.MyViewHolder>() {
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
@@ -24,11 +24,7 @@ class MyAdapter(private val userList: ArrayList<Fees>) : RecyclerView.Adapter<My
         val currentitem = userList[position]
 
         holder.name.text = currentitem.stdname//should be the one in the database
-        holder.adm.text = currentitem.adm
-        holder.amount.text = currentitem.amount
-        holder.balance.text = currentitem.totalfee
-//        holder.method.text = currentitem.stowhen
-        holder.date.text = currentitem.date
+        holder.adm.text = currentitem.stdname
 
     }
 
@@ -42,10 +38,6 @@ class MyAdapter(private val userList: ArrayList<Fees>) : RecyclerView.Adapter<My
 
         val name : TextView = itemView.findViewById(R.id.sname)
         val adm : TextView = itemView.findViewById(R.id.qrcode)
-        val amount : TextView = itemView.findViewById(R.id.amountt)
-        val balance : TextView = itemView.findViewById(R.id.balance)
-//        val method : TextView = itemView.findViewById(R.id.method)
-        val date : TextView = itemView.findViewById(R.id.date)
 
     }
 

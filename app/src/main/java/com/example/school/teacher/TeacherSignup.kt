@@ -12,7 +12,6 @@ import com.google.android.gms.auth.api.signin.GoogleSignInClient
 import com.google.firebase.auth.FirebaseAuth
 
 class TeacherSignup : AppCompatActivity() {
-    private lateinit var googleSignInClient : GoogleSignInClient
     private lateinit var firebaseAuth: FirebaseAuth
     private lateinit var name: EditText
     private lateinit var email: EditText

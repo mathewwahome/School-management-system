@@ -4,13 +4,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/grey_bcakground"
     tools:context=".basaa.BasaaHome">
 
+    <Button
+        android:id="@+id/logoutbtnb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:onClick="quitApp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <ScrollView
-        android:id="@+id/scrollView4"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:padding="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="35dp"
+        android:paddingRight="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -51,25 +62,37 @@
                 android:id="@+id/textView14"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="1.View those who have not yet paid their fees" />
+                android:paddingTop="20dp"
+                android:text="1.View those who have not yet paid their fees"
+
+                android:textColor="#303132" />
 
             <TextView
                 android:id="@+id/textView15"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="2.View those who have completed their fees" />
+                android:paddingTop="20dp"
+
+
+                android:text="2.View those who have completed their fees"
+                android:textColor="#303132" />
 
             <TextView
                 android:id="@+id/qr"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="3.View uploaded fees by the parents(Photo or QR)" />
+                android:paddingTop="20dp"
+                android:text="3.View uploaded fees by the parents(Photo or QR)"
+
+                android:textColor="#303132" />
 
             <TextView
                 android:id="@+id/add_fees_p"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="4.Add fees paid physicaly" />
+                android:paddingTop="20dp"
+                android:text="4.Add fees paid physicaly"
+                android:textColor="#303132" />
 
         </LinearLayout>
     </ScrollView>

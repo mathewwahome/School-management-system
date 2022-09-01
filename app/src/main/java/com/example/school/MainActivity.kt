@@ -3,13 +3,14 @@ package com.example.school
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.TextView
 import com.example.school.admin.AdminSignup
 import com.example.school.parents.ParentsActivity
 import com.example.school.staff.StaffActivity
 import com.example.school.students.StudentActivity
 import com.example.school.teacher.Teacher
-import com.example.school.teacher.TeacherActivity
+import kotlin.system.exitProcess
 
 class MainActivity : AppCompatActivity() {
     private lateinit var admin:TextView
@@ -49,5 +50,9 @@ class MainActivity : AppCompatActivity() {
             val teacher = Intent(applicationContext, Teacher::class.java)
             startActivity(teacher)
         }
+    }
+    fun quitApp(view: View) {
+        this@MainActivity.finish()
+        exitProcess(0)
     }
 }

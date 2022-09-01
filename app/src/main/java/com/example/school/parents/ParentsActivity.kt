@@ -54,16 +54,12 @@ class ParentsActivity : AppCompatActivity() {
             val intent = Intent(applicationContext, StudentDeActivity::class.java)
             startActivity(intent)
         }
-        findViewById<Button>(R.id.signOutBtn).setOnClickListener {
-            Firebase.auth.signOut()
-            startActivity(Intent(this , ParentMainActivity::class.java))
-        }
+
         payviampesa!!.setOnClickListener {
             val simToolKitLaunchIntent =
                 applicationContext.packageManager.getLaunchIntentForPackage("com.android.stk")
             simToolKitLaunchIntent?.let { startActivity(it) }
         }
-
 
         selectimage.setOnClickListener {
             val intent = Intent(applicationContext, FeesUpload::class.java)

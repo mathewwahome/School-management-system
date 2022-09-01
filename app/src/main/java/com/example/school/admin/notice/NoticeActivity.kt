@@ -1,11 +1,13 @@
 package com.example.school.admin.notice
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.*
 import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
 import com.example.school.R
 import com.example.school.admin.notice.mode.NoticeMode
+import com.example.school.ui.home.HomeFragment
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
@@ -49,8 +51,11 @@ class NoticeActivity : AppCompatActivity(){
         sendbtn.setOnClickListener {
             sendnotice()
         }
-        fabe.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG).setAction("Action", null).show()
+        fabe.setOnClickListener {
+            val intent = Intent(this@NoticeActivity,  HomeFragment()::class.java)
+            startActivity(intent)
+
+//            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG).setAction("Action", null).show()
         }
     }
 

@@ -14,7 +14,7 @@
         android:layout_marginTop="1dp"
         android:layout_marginBottom="250dp"
         android:gravity="center_horizontal"
-        android:text="@string/xschool_basaa_page"
+        android:text="SchoolaX Basaa Page"
         android:textColor="#930808"
         android:textSize="25sp"
         android:textStyle="bold"

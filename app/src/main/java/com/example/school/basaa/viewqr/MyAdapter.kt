@@ -9,7 +9,6 @@ import com.example.school.R
 
 class MyAdapter(private val userList: ArrayList<Qr>) : RecyclerView.Adapter<MyAdapter.MyViewHolder>() {
 
-
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
 
         val itemView = LayoutInflater.from(parent.context).inflate(
@@ -24,7 +23,7 @@ class MyAdapter(private val userList: ArrayList<Qr>) : RecyclerView.Adapter<MyAd
         val currentitem = userList[position]
 
         holder.name.text = currentitem.stdname//should be the one in the database
-        holder.adm.text = currentitem.stdname
+        holder.adm.text = currentitem.qrcode
 
     }
 

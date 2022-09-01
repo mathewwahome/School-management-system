@@ -18,6 +18,9 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".basaa.BasaaLogin"
+            android:exported="false" />
+        <activity
             android:name=".basaa.BasaaHome"
             android:exported="false" />
         <activity
@@ -124,7 +127,6 @@
         <activity
             android:name=".basaa.SignupActivity"
             android:exported="false" />
-
         <activity
             android:name=".basaa.BasaaActivity"
             android:exported="false" />

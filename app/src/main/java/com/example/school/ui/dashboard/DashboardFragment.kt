@@ -10,6 +10,7 @@ import androidx.cardview.widget.CardView
 import androidx.fragment.app.Fragment
 import com.example.school.MainActivity
 import com.example.school.R
+import com.example.school.admin.AdminLogin
 import com.example.school.admin.ClassesActivity
 import com.example.school.admin.exam.Exam
 import com.example.school.admin.homework.AssignmentActivity
@@ -58,17 +59,14 @@ class DashboardFragment : Fragment() {
             val  intent = Intent(this@DashboardFragment.requireContext(), AddStaff::class.java)
             startActivity(intent)
         }
-        mview.findViewById<CardView>(R.id.exam_tap).setOnClickListener {
-            val  intent = Intent(this@DashboardFragment.requireContext(), Exam::class.java)
-            startActivity(intent)
-        }
+
         mview.findViewById<CardView>(R.id.parents_tap).setOnClickListener {
             val  intent = Intent(this@DashboardFragment.requireContext(), Contacts::class.java)
             startActivity(intent)
         }
         mview.findViewById<Button>(R.id.signOutBtnb).setOnClickListener {
             Firebase.auth.signOut()
-            val  intent = Intent(this@DashboardFragment.requireContext(), MainActivity::class.java)
+            val  intent = Intent(this@DashboardFragment.requireContext(), AdminLogin::class.java)
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
             startActivity(intent)
         }

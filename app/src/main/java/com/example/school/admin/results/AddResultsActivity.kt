@@ -77,7 +77,6 @@ class AddResultsActivity : AppCompatActivity() {
         val history=history.text.toString().trim()
         val geo=geo.text.toString().trim()
         val computer =computer.text.toString().trim()
-        val new = mar.text.toString().trim()
         val total = ttmrk.text.toString().trim()
         //doing of the calculations
         //calculate the total marks,mean the assing the meangrade
@@ -124,6 +123,7 @@ class AddResultsActivity : AppCompatActivity() {
 
         }
 
+        val new = mar.text.toString().trim()
         //display it on the screen
         mean.text = meanmarks.toString()
         ttmrk.text = totalmarks.toString()

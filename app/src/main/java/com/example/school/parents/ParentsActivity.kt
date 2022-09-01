@@ -28,7 +28,7 @@ class ParentsActivity : AppCompatActivity() {
     private lateinit var dbRef: DatabaseReference
     private lateinit var selectimage: TextView
     private  var feesimage= Firebase.storage
-private lateinit var uri:Uri
+    private lateinit var uri:Uri
     override fun onCreate(savedInstanceState: Bundle?) {
         var payviampesa: TextView?=null
 

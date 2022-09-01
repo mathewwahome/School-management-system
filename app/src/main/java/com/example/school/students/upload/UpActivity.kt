@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageView
+import android.widget.TextView
 import android.widget.Toast
 import com.example.school.R
 import com.google.firebase.storage.FirebaseStorage
@@ -14,8 +15,8 @@ import java.text.SimpleDateFormat
 import java.util.*
 
 class UpActivity : AppCompatActivity() {
-    private lateinit var upload:Button
-    private lateinit var select:Button
+    private lateinit var upload:TextView
+    private lateinit var select:TextView
     private lateinit var firebaseimage:ImageView
     private lateinit var ImageUri :Uri
     override fun onCreate(savedInstanceState: Bundle?) {

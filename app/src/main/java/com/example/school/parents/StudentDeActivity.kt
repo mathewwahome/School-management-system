@@ -28,6 +28,8 @@ class StudentDeActivity : AppCompatActivity() {
     private lateinit var mth: TextView
     private lateinit var bst: TextView
     private lateinit var adm: EditText
+    private lateinit var totalmark: TextView
+    private lateinit var totalmarks: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -51,8 +53,10 @@ class StudentDeActivity : AppCompatActivity() {
         mth= findViewById(R.id.math)
         bst= findViewById(R.id.bst)
         adm = findViewById(R.id.adm)
+        totalmark = findViewById(R.id.meangrade)
+        totalmarks = findViewById(R.id.totalmarks)
 
-        readedata.setOnClickListener {
+            readedata.setOnClickListener {
             val studentname = stdname.text.toString().lowercase().trim()
             val admm = adm.text.toString().trim()
 
@@ -82,12 +86,15 @@ class StudentDeActivity : AppCompatActivity() {
                 val math= it.child("math").value
                 val physics = it.child("physics").value
                 val nameof = it.child("name").value
-
+                val marks = it.child("grade").value
+                val totalmk = it.child("marks").value
                 Toast.makeText(this, "Check out your results", Toast.LENGTH_SHORT).show()
 
                 stdname.text.clear()
                 adm.text.clear()
 
+                totalmark.text = marks.toString()
+                totalmarks.text = totalmk.toString()
                 eng .text= english.toString()
                 kiswa.text= kiswahili.toString()
                 chem.text= chemistry.toString()
@@ -101,6 +108,7 @@ class StudentDeActivity : AppCompatActivity() {
                 bst.text= bustness.toString()
                 gt.text = nameof.toString()
                 gtt.text = addmision.toString()
+
             } else {
                 Toast.makeText(this, "User Doesn't Exist", Toast.LENGTH_SHORT).show()
             }

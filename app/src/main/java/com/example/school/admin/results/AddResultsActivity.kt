@@ -77,7 +77,6 @@ class AddResultsActivity : AppCompatActivity() {
         val history=history.text.toString().trim()
         val geo=geo.text.toString().trim()
         val computer =computer.text.toString().trim()
-        val total = ttmrk.text.toString().trim()
         //doing of the calculations
         //calculate the total marks,mean the assing the meangrade
         val totalmarks =  math.toDouble() + english.toDouble() + chemistry.toDouble()+ kiswahili.toDouble()+ cre.toDouble()+ bst.toDouble()+ biology.toDouble()+ physics.toDouble()+ history.toDouble()+ geo.toDouble()+ computer.toDouble()
@@ -125,9 +124,10 @@ class AddResultsActivity : AppCompatActivity() {
 
         val new = mar.text.toString().trim()
         //display it on the screen
+        val total = ttmrk.text.toString().trim()
         mean.text = meanmarks.toString()
         ttmrk.text = totalmarks.toString()
-        val students = ResultsModel(name,admission,math,english,kiswahili,chemistry,cre,physics,bst,biology,computer,history,geo,new)
+        val students = ResultsModel(name,admission,math,english,kiswahili,chemistry,cre,physics,bst,biology,computer,history,geo,new,total)
 
         dbRef.child(name).setValue(students)
             .addOnCompleteListener {

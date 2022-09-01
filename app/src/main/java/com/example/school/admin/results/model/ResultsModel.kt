@@ -14,6 +14,7 @@ data class ResultsModel(
     var computer : String?= null,
     var history: String?= null,
     var geo: String?= null,
-    var grade: String?=null
+    var grade: String?=null,
+    var marks: String?=null
 
 )

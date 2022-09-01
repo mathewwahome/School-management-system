@@ -6,7 +6,6 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.school.R
-import com.google.firebase.firestore.auth.User
 
 class MyAdapter(private val userList: ArrayList<com.example.school.admin.students.viewdb.User>) : RecyclerView.Adapter<MyAdapter.MyViewHolder>() {
 
@@ -40,9 +39,9 @@ class MyAdapter(private val userList: ArrayList<com.example.school.admin.student
 
     class MyViewHolder(itemView : View) : RecyclerView.ViewHolder(itemView){
 
-        val firstName : TextView = itemView.findViewById(R.id.tvfirstName)
-        val lastName : TextView = itemView.findViewById(R.id.tvlastName)
-        val age : TextView = itemView.findViewById(R.id.tvage)
+        val firstName : TextView = itemView.findViewById(R.id.admno)
+        val lastName : TextView = itemView.findViewById(R.id.sname)
+        val age : TextView = itemView.findViewById(R.id.amountt)
 
     }
 

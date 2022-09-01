@@ -32,7 +32,7 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/tvlastName"
+                    android:id="@+id/sname"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
@@ -55,7 +55,7 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/tvfirstName"
+                    android:id="@+id/admno"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
@@ -78,7 +78,7 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/tvage"
+                    android:id="@+id/amountt"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"

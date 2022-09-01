@@ -69,6 +69,7 @@ class DashboardFragment : Fragment() {
         mview.findViewById<Button>(R.id.signOutBtnb).setOnClickListener {
             Firebase.auth.signOut()
             val  intent = Intent(this@DashboardFragment.requireContext(), MainActivity::class.java)
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
             startActivity(intent)
         }
         return mview

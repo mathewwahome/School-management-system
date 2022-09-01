@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/grey_bcakground"
     tools:context=".admin.notice.NoticeActivity">
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -171,7 +172,7 @@
                     android:textSize="20sp" />
 
                 <CalendarView
-                    android:id="@+id/datenotice"
+                    android:id="@+id/hhq"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="#E53935"
@@ -179,6 +180,20 @@
                     android:unfocusedMonthDateColor="#039BE5"
                     android:weekNumberColor="#C0CA33"
                     android:weekSeparatorLineColor="#3949AB" />
+
+                <TextView
+                    android:id="@+id/textView138"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Notice date" />
+
+                <EditText
+                    android:id="@+id/datenotice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Date Of Notice"
+                    android:inputType="date" />
 
                 <TextView
                     android:id="@+id/textView94"
@@ -202,8 +217,7 @@
                     android:paddingBottom="40dp"
                     android:textColor="#1C093A"
                     android:textColorHint="#00ACC1" />
-
-                <Button
+               <Button
                     android:id="@+id/sendbtn"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -211,6 +225,7 @@
                     android:text="SEND"
                     android:textColor="#039BE5"
                     app:backgroundTint="#F4511E" />
+
             </LinearLayout>
 
         </LinearLayout>

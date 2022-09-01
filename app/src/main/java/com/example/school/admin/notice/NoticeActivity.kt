@@ -10,7 +10,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 
-class NoticeActivity : AppCompatActivity() {
+class NoticeActivity : AppCompatActivity(){
     private lateinit var dbRef: DatabaseReference
 
     private lateinit var noticetypebtn: RadioGroup
@@ -20,7 +20,8 @@ class NoticeActivity : AppCompatActivity() {
     private lateinit var selectparty:RadioGroup
     private lateinit var sendbtn:Button
     private lateinit var sms:EditText
-    private lateinit var date:CalendarView
+    private lateinit var date:EditText
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_notice)
@@ -33,7 +34,6 @@ class NoticeActivity : AppCompatActivity() {
         sendbtn = findViewById(R.id.sendbtn)
         date = findViewById(R.id.datenotice)
         dbRef = FirebaseDatabase.getInstance().getReference("Notice")
-
 
         noticetypebtn.setOnCheckedChangeListener { _, i ->
             val rb = findViewById<RadioButton>(i)
@@ -58,18 +58,28 @@ class NoticeActivity : AppCompatActivity() {
         val type = noticetype.text.toString()
         val part = party.text.toString()
         val notice = sms.text.toString().trim()
-        val datenote= date.toString()
+        val datenote= date.toString().trim()
 
-        val notices = NoticeMode(type,part,notice, datenote)
 
-        dbRef.child(part).setValue(notices)
-            .addOnCompleteListener {
-                Toast.makeText(this,"Notice sent", Toast.LENGTH_LONG).show()
+        if (notice.isEmpty()){
+            sms.error = "please enter message"
+        }else if (datenote.isEmpty()){
+            date.error = "Please enter the date"
+        }else{
+            val notices = NoticeMode(type,part,notice, datenote)
 
+            dbRef.child(part).setValue(notices)
+                .addOnCompleteListener {
+                    Toast.makeText(this,"Notice sent", Toast.LENGTH_LONG).show()
 //dd the clear code
 
-            }.addOnFailureListener {
-                Toast.makeText(this, "Notice not sent", Toast.LENGTH_LONG).show()
-            }
+                }.addOnFailureListener {
+                    Toast.makeText(this, "Notice not sent", Toast.LENGTH_LONG).show()
+                }
+        }
+
+
     }
+
+
 }

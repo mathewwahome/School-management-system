@@ -18,6 +18,9 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".basaa.BasaaHome"
+            android:exported="false" />
+        <activity
             android:name=".basaa.viewqr.ViewQr"
             android:exported="false" />
         <activity
@@ -121,11 +124,7 @@
         <activity
             android:name=".basaa.SignupActivity"
             android:exported="false" />
-        <activity
-            android:name=".basaa.BasaaMainActivity"
-            android:exported="false"
-            android:label="@string/title_activity_basaa_main"
-            android:theme="@style/Theme.School.NoActionBar" />
+
         <activity
             android:name=".basaa.BasaaActivity"
             android:exported="false" />

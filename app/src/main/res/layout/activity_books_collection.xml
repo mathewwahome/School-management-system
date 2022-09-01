@@ -148,7 +148,7 @@
                         android:text="@string/giving_date" />
 
                     <TextView
-                        android:id="@+id/textView16"
+                        android:id="@+id/qr"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"

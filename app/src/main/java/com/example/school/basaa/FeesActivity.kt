@@ -39,6 +39,9 @@ class FeesActivity : AppCompatActivity() {
         date = findViewById(R.id.paymentdate)
         amount = findViewById(R.id.amount)
         totalamount = findViewById(R.id.totalamount)
+
+
+
         paymentbtn.setOnClickListener {
             uploadfees()
         }
@@ -54,6 +57,7 @@ class FeesActivity : AppCompatActivity() {
         val paymentmethode = paymentmethod.text.toString().trim()
         val datee = date.text.toString().trim()
         val amoutnt= amount.text.toString().trim()
+        val total = totalamount.text.toString().trim()
 
         if (name.text.isEmpty()){
             name.error ="please enter the student name"
@@ -62,7 +66,10 @@ class FeesActivity : AppCompatActivity() {
         }else if (paymentmethod.text.isEmpty()){
             paymentmethod.error = "please enter the qr"
         }else{
-            val users = FeeModel(namee,qr,datee,amoutnt,paymentmethode)
+            val balance = total.toDouble() - amoutnt.toDouble()
+            val balan = balance.toString()
+
+            val users = FeeModel(namee,qr,datee,amoutnt,paymentmethode, balan)
             dbRef.child(namee).setValue(users)
                 .addOnCompleteListener {
                     Toast.makeText(this,"sent", Toast.LENGTH_LONG).show()

@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@mipmap/rightfower"
-    tools:context=".basaa.ui.home.HomeFragment">
+    tools:context=".basaa.BasaaHome">
 
     <ScrollView
         android:id="@+id/scrollView4"
@@ -61,16 +60,16 @@
                 android:text="2.View those who have completed their fees" />
 
             <TextView
-                android:id="@+id/textView16"
+                android:id="@+id/qr"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="3.View uploaded fees by the parents(Photo or QR)" />
 
             <TextView
-                android:id="@+id/add_fees"
+                android:id="@+id/add_fees_p"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="4.Add paid fees" />
+                android:text="4.Add fees paid physicaly" />
 
         </LinearLayout>
     </ScrollView>

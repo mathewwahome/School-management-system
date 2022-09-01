@@ -36,6 +36,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
                     android:layout_marginLeft="8dp"
+                    android:text="on"
                     android:textColor="@color/black"
                     android:textSize="20sp" />
             </TableRow>
@@ -57,6 +58,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
                     android:layout_marginLeft="8dp"
+                    android:text="ee"
                     android:textColor="@color/black"
                     android:textSize="20sp" />
             </TableRow>
@@ -73,9 +75,10 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/amounttt"
+                    android:id="@+id/amount"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:text="rr"
                     android:textSize="20sp" />
 
             </TableRow>
@@ -96,6 +99,7 @@
                     android:id="@+id/method"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:text="ee"
                     android:textSize="20sp" />
             </TableRow>
 
@@ -114,7 +118,8 @@
                 <TextView
                     android:id="@+id/date"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="34dp"
+                    android:text="hh" />
             </TableRow>
 
             <TableRow
@@ -132,7 +137,8 @@
                 <TextView
                     android:id="@+id/balance"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:text="ggvvhjjhhjh" />
             </TableRow>
         </TableLayout>
 

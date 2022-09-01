@@ -6,5 +6,6 @@ data class FeeModel(
     var date :String?=null,
     var amount :String?=null,
     var totalfee:String?=null,
-    var method:String?=null
+    var method:String?=null,
+    var balance:String?=null
 )

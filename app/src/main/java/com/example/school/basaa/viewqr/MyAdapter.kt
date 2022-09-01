@@ -13,7 +13,7 @@ class MyAdapter(private val userList: ArrayList<Qr>) : RecyclerView.Adapter<MyAd
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
 
         val itemView = LayoutInflater.from(parent.context).inflate(
-            R.layout.user_item,
+            R.layout.qr_item,
         parent,false)
         return MyViewHolder(itemView)
 

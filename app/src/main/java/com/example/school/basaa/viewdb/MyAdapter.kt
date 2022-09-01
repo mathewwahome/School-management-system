@@ -13,8 +13,9 @@ class MyAdapter(private val userList: ArrayList<Fees>) : RecyclerView.Adapter<My
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
 
         val itemView = LayoutInflater.from(parent.context).inflate(
-            R.layout.user_item,
+            R.layout.fees_item,
         parent,false)
+
         return MyViewHolder(itemView)
 
     }
@@ -27,22 +28,16 @@ class MyAdapter(private val userList: ArrayList<Fees>) : RecyclerView.Adapter<My
         holder.adm.text = currentitem.adm
         holder.amount.text = currentitem.amount
         holder.balance.text = currentitem.totalfee
-//        holder.method.text = currentitem.stowhen
         holder.date.text = currentitem.date
-
     }
-
     override fun getItemCount(): Int {
-
         return userList.size
     }
-
-
     class MyViewHolder(itemView : View) : RecyclerView.ViewHolder(itemView){
 
         val name : TextView = itemView.findViewById(R.id.sname)
         val adm : TextView = itemView.findViewById(R.id.qrcode)
-        val amount : TextView = itemView.findViewById(R.id.amountt)
+        val amount : TextView = itemView.findViewById(R.id.amount)
         val balance : TextView = itemView.findViewById(R.id.balance)
 //        val method : TextView = itemView.findViewById(R.id.method)
         val date : TextView = itemView.findViewById(R.id.date)

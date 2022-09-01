@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
 import com.example.school.R
-import com.example.school.basaa.BasaaMainActivity
+import com.example.school.basaa.BasaaHome
 import com.example.school.libraly.Libralian
 
 class StaffActivity : AppCompatActivity() {
@@ -18,7 +18,7 @@ class StaffActivity : AppCompatActivity() {
         basaa = findViewById(R.id.basaa)
         libralian = findViewById(R.id.lib)
         basaa.setOnClickListener {
-            val intent = Intent(applicationContext, BasaaMainActivity::class.java)
+            val intent = Intent(applicationContext, BasaaHome::class.java)
             startActivity(intent)
         }
         libralian.setOnClickListener {

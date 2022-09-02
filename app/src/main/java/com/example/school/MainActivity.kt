@@ -17,7 +17,6 @@ class MainActivity : AppCompatActivity() {
     private lateinit var staff:TextView
     private lateinit var parent:TextView
     private lateinit var students:TextView
-    private lateinit var teachers:TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -28,7 +27,6 @@ class MainActivity : AppCompatActivity() {
         admin = findViewById(R.id.basaa )
         parent = findViewById(R.id.parents)
         students = findViewById(R.id.students)
-        teachers = findViewById(R.id.teachers)
 
         admin.setOnClickListener {
             val admins = Intent(applicationContext, AdminSignup::class.java)
@@ -46,13 +44,10 @@ class MainActivity : AppCompatActivity() {
             val admins = Intent(applicationContext, StudentActivity::class.java)
             startActivity(admins)
         }
-        teachers.setOnClickListener {
-            val teacher = Intent(applicationContext, Teacher::class.java)
-            startActivity(teacher)
-        }
     }
     fun quitApp(view: View) {
         this@MainActivity.finish()
-        exitProcess(0)
+        //exitProcess(0)
+        finishAffinity()
     }
 }

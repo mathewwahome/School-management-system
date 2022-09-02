@@ -30,6 +30,6 @@ class StaffActivity : AppCompatActivity() {
     }
     fun quitApp(view: View) {
         this@StaffActivity.finish()
-        exitProcess(0)
+        finishAffinity()
     }
 }

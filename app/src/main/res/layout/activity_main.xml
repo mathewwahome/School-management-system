@@ -96,21 +96,6 @@
                 android:textSize="20sp" />
 
             <TextView
-                android:id="@+id/teachers"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
-                android:layout_marginBottom="15dp"
-                android:background="@drawable/teacher"
-                android:gravity="center"
-                android:paddingTop="10dp"
-                android:textStyle="bold"
-                android:paddingBottom="10dp"
-                android:text="Teacher"
-                android:textColor="#E53935"
-                android:textSize="20sp" />
-
-            <TextView
                 android:id="@+id/students"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
